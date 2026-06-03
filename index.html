@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Code Bot Dashboard</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#0b1220;
+color:white;
+overflow-x:hidden;
+}
+
+.banner{
+height:320px;
+background:url('banner.jpg') center/cover;
+position:relative;
+}
+
+.banner::before{
+content:'';
+position:absolute;
+inset:0;
+background:rgba(0,0,0,.35);
+backdrop-filter:blur(2px);
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:20px;
+}
+
+.profile{
+position:relative;
+margin-top:-90px;
+text-align:center;
+z-index:10;
+}
+
+.avatar{
+width:170px;
+height:170px;
+border-radius:50%;
+border:6px solid #0b1220;
+box-shadow:0 0 30px rgba(59,130,246,.5);
+object-fit:cover;
+background:#111827;
+}
+
+.bot-name{
+font-size:42px;
+font-weight:700;
+margin-top:15px;
+}
+
+.badge{
+display:inline-block;
+padding:6px 14px;
+background:#2563eb;
+border-radius:999px;
+margin-top:8px;
+font-size:14px;
+}
+
+.desc{
+margin-top:10px;
+color:#94a3b8;
+}
+
+.buttons{
+margin-top:20px;
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+}
+
+.btn{
+text-decoration:none;
+padding:14px 26px;
+border-radius:14px;
+font-weight:600;
+transition:.3s;
+}
+
+.invite{
+background:#2563eb;
+color:white;
+}
+
+.invite:hover{
+transform:translateY(-3px);
+}
+
+.info-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:20px;
+margin-top:40px;
+}
+
+.card{
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(20px);
+border:1px solid rgba(255,255,255,.08);
+padding:25px;
+border-radius:20px;
+}
+
+.card-title{
+color:#94a3b8;
+font-size:14px;
+}
+
+.card-value{
+font-size:24px;
+font-weight:700;
+margin-top:8px;
+color:#60a5fa;
+}
+
+.section{
+margin-top:35px;
+}
+
+.section h2{
+margin-bottom:15px;
+}
+
+.command{
+background:#111827;
+padding:15px;
+border-radius:12px;
+margin-bottom:10px;
+border-left:4px solid #3b82f6;
+}
+
+.footer{
+text-align:center;
+padding:40px 20px;
+color:#64748b;
+}
+
+@media(max-width:768px){
+
+.bot-name{
+font-size:32px;
+}
+
+.avatar{
+width:140px;
+height:140px;
+}
+
+.banner{
+height:250px;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<div class="banner"></div>
+
+<div class="container">
+
+<div class="profile">
+
+<img
+class="avatar"
+src="avatar.png"
+alt="Code Bot">
+
+<h1 class="bot-name">Code Bot</h1>
+
+<div class="badge">Discord Application</div>
+
+<div class="desc">
+Bot mã hóa code
+</div>
+
+<div class="buttons">
+
+<a
+class="btn invite"
+href="https://discord.com/oauth2/authorize?client_id=1507004325996531712&scope=bot%20applications.commands&permissions=8"
+target="_blank">
+🚀 Mời Bot
+</a>
+
+</div>
+
+</div>
+
+<div class="info-grid">
+
+<div class="card">
+<div class="card-title">🆔 Bot ID</div>
+<div class="card-value">
+1507004325996531712
+</div>
+</div>
+
+<div class="card">
+<div class="card-title">📅 Created</div>
+<div class="card-value">
+21/05/2026
+</div>
+</div>
+
+<div class="card">
+<div class="card-title">🤖 Bot Name</div>
+<div class="card-value">
+Code Bot
+</div>
+</div>
+
+<div class="card">
+<div class="card-title">⚡ Commands</div>
+<div class="card-value">
+3
+</div>
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>📜 Commands</h2>
+
+<div class="command">
+/getkey
+</div>
+
+<div class="command">
+/help
+</div>
+
+<div class="command">
+/viplist
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>📝 About</h2>
+
+<div class="card">
+Code Bot là bot hỗ trợ mã hóa code với các lệnh tiện ích đơn giản và dễ sử dụng.
+</div>
+
+</div>
+
+<div class="footer">
+© 2026 Code Bot Dashboard
+</div>
+
+</div>
+
+</body>
+</html>
